@@ -3,10 +3,10 @@ def chickandrabbit():
 
  legs = int(input("count of legs: "))
 
- chicken = 2
-
  rabbit = 4
 
+ chicken = 2
+ 
  y = (legs - 2 * head) / 2
  x = head - y
 
