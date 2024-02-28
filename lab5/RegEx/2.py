@@ -1,10 +1,14 @@
 import re
 
-word = input("Your string: ")
-matches = []
+file = open('row.txt', 'r')
 
-for i in range(2, 4):
-    p = re.compile(r'a' + 'b' * i, flags=re.IGNORECASE)
-    matches.extend(p.findall(word))
+w = file.read()
 
-print("Need output 'ab*':", matches)
+l = list(w.split('\n'))
+
+for i in range(len(l)-1):
+    p = re.search(".*abb.*|.*abbb.*",l[i])
+    if p: 
+        print("Need output 'ab*' in "  + str(i+1) + "th row: " + p.group())
+
+

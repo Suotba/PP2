@@ -1,7 +1,12 @@
 import re
 
-word = input("Your string: ")
+file = open('row.txt', 'r')
 
-matches = re.findall("a+b*", word)
+s = file.read()
 
-print("Need output'ab*':", matches)
+l = list(s.split('\n'))
+
+for i in range(len(l)-1):
+    k = re.search(".*a.*", l[i])
+    if k :
+        print("Found in " + str(i+1) + "th row: " + k.group())
