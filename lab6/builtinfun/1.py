@@ -1,4 +1,4 @@
-n = input()
+n = input("Your list: ")
 n_list = list(map(int, n.split()))
 
 multi_of_list = 1

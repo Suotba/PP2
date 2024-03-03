@@ -1,4 +1,4 @@
-s = str(input())
+s = str(input("Your string: "))
 
 count_of_lower = 0
 

@@ -1,0 +1,4 @@
+lab6 is interesting and useful
+jdm, GTR, 38, 35, jdm, GTR, 38, 35, 
+'a' - append - will append to the end of the file
+'w' - write - will overwrite any existing content

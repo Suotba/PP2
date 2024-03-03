@@ -2,12 +2,12 @@ import time
 import math
 
 def calculate_square_root(number, delay_ms):
-    time.sleep(delay_ms / 1000.0)  
+    time.sleep(delay_ms / 1000)  
     result = math.sqrt(number)
     return result
 
-number = int(input())
-delay_ms = int(input())
+number = int(input("Your number: "))
+delay_ms = int(input("After: "))
 
 
 result = calculate_square_root(number, delay_ms)
