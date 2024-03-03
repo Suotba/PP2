@@ -1,9 +1,9 @@
 import os
 
-def analyze_path(given_path):
-    if os.path.exists(given_path):
-        file_name = os.path.basename(given_path)
-        directory_path = os.path.dirname(given_path)
+def analyze_path(wa):
+    if os.path.exists(wa):
+        file_name = os.path.basename(wa)
+        directory_path = os.path.dirname(wa)
 
         print("The path exists.")
         print(f"Filename: {file_name}")
@@ -12,6 +12,6 @@ def analyze_path(given_path):
         print("The path does not exist.")
 
 
-path = 'Way/example1/inside_example/finally1.txt'
+wa = 'Way/example1/inside_example/finally1.txt'
 
-analyze_path(path)
+analyze_path(wa)
